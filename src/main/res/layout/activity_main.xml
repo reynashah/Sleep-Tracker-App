@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D1E8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/dreameaselogo">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/settingsButton"
+        android:background="@drawable/setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/calendarButton"
+        android:background="@drawable/calendar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#454545"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:text="Log Sleep"
+        android:textSize="32dp"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:id="@+id/logsleepButton"
+        android:backgroundTint="#2196F3"
+        android:text="+"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="115dp"
+        android:textSize="32dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="205dp"
+        android:text="Friday"
+        android:textSize="36dp"
+        android:textColor="#555555"
+        android:id="@+id/DayText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="253dp"
+        android:text="September 30, 2023"
+        android:textSize="36dp"
+        android:textColor="#555555"
+        android:id="@+id/DateText"
+        />
+
+    <RelativeLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="310dp"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:id="@+id/Dailyprogress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circular_shape"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:textAlignment="center" />
+
+        <!--Text implementation in center of the progress bar-->
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="---"
+            android:textColor="#3F51B5"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dailyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="147dp"
+            android:gravity="center"
+            android:text="---"
+            android:textColor="#3F51B5"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/Monthlyprogress_bar"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/horiz_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="575dp"
+        android:text="Monthly Progress"
+        android:textSize="30dp"
+        android:textColor="#1F2335"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="645dp"
+        android:text=" "
+        android:textSize="25dp"
+        android:textColor="#1F2335"
+        android:id="@+id/monthlyText"
+        />
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#14223E"
+        android:layout_marginTop="700dp"
+        android:text="Analyze Sleep"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/analyzeButton"/>
+
+</RelativeLayout>

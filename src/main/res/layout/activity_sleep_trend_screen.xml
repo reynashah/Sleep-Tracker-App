@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D1E8"
+    tools:context=".SleepTrendScreen">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/dreameaselogo">
+    </ImageView>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/settingsButton"
+        android:background="@drawable/setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/homeButton"
+        android:background="@drawable/home"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="75dp"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#6D8F9E"
+        android:layout_marginTop="160dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Trends"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimal Sleep Time "
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="170dp"
+        android:id="@+id/optSleepText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Sleep Time"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp"
+        android:id="@+id/avgSleepText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Hours Logged"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:id="@+id/totalText"
+        />
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="110dp"
+        android:backgroundTint="#454545"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="730dp"
+        android:text="Log Sleep"
+        android:textSize="32dp"
+        android:textAlignment="textStart"
+        />
+
+    <Button
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/logsleepButton"
+        android:backgroundTint="#2196F3"
+        android:text="+"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textSize="32dp"
+        android:layout_marginTop="752dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D1E8"
+    tools:context=".LogSleepScreen">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/dreameaselogo">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/settingsButton"
+        android:background="@drawable/setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/homeButton"
+        android:background="@drawable/home"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="73dp"
+        android:layout_marginTop="15dp" />
+
+    <DigitalClock
+
+        android:layout_marginLeft="40dp"
+        android:textSize="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:id="@+id/logsleepButton"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="sans-serif"
+        android:text="Start Sleep Session"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="310dp"
+        android:text="Rate Sleep"
+        android:id="@+id/rateText"
+        android:textSize="40dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#393939"/>
+
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:id="@+id/rateButton10"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="338dp"/>
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="378dp"
+        android:text="10"
+        android:id="@+id/rateText10"
+        android:textSize="36dp"
+        android:layout_marginLeft="344dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:id="@+id/rateButton1"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="22dp"/>
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="378dp"
+        android:id="@+id/rateText1"
+        android:text="1"
+        android:textSize="36dp"
+        android:layout_marginLeft="39dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton2"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="87dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton3"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="118dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton4"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="149dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton5"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="180dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton6"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="211dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton7"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="242dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton8"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="273dp"/>
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:id="@+id/rateButton9"
+        android:backgroundTint="#373737"
+        android:textColor="@color/white"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="304dp"/>
+
+</RelativeLayout>

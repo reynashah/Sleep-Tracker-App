@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3D1E8"
+    tools:context=".CalendarScreen">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/dreameaselogo">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/settingsButton"
+        android:background="@drawable/setting"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/homeButton"
+        android:background="@drawable/home"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:layout_width="420dp"
+        android:layout_height="90dp"
+        android:backgroundTint="#454545"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="740dp"
+        android:text="Log Sleep"
+        android:textSize="32dp"
+        android:textAlignment="textStart" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/logsleepButton"
+        android:background="@drawable/plus"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="752dp"
+        android:textSize="32dp"
+        android:textAlignment="textStart" />
+
+    <!-- Add CalendarView to display the Calendar -->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_marginTop="105dp"
+        android:layout_centerHorizontal="true"
+        android:background="#6D8F9E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </CalendarView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#6D8F9E"
+        android:layout_marginTop="470dp" />
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#454545"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="325dp"
+        android:text="Log Sleep"
+        android:textSize="32dp"
+        android:id="@+id/sleepQuality"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="480dp"
+        android:text="Summary"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#202020" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="530dp"
+        android:text="September 29, 2023"
+        android:textSize="25dp"
+        android:textColor="#202020"
+        android:id="@+id/selectedDateText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="575dp"
+        android:textStyle="bold"
+        android:text="Bed Time "
+        android:textSize="25dp"
+        android:textColor="#1F2335"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="605dp"
+        android:text="9:32 PM"
+        android:textSize="22dp"
+        android:textColor="#1F2335"
+        android:id="@+id/bedtimeText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="650dp"
+        android:text="Wake Time"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#1F2335"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="680dp"
+        android:text="8:06 AM"
+        android:textSize="22dp"
+        android:textColor="#1F2335"
+        android:id="@+id/wakeupText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="575dp"
+        android:text="Hours Slept "
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#1F2335"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="605dp"
+        android:text="10.6 hours"
+        android:textSize="22dp"
+        android:textColor="#1F2335"
+        android:id="@+id/hoursText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="650dp"
+        android:textStyle="bold"
+        android:text="Mood "
+        android:textSize="25dp"
+        android:textColor="#1F2335"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="680dp"
+        android:text="8"
+        android:textSize="22dp"
+        android:textColor="#1F2335"
+        android:id="@+id/moodText"
+        />
+
+</RelativeLayout>
